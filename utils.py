@@ -24,7 +24,7 @@ def get_data_sets(x, y):
     print(f'Forma de y_test : {y_test.shape}')
     return x_train_val, y_train_val, x_test, y_test, x_train, y_train, x_val, y_val
 
-def prepare_date(dataset):
+def prepare_data(dataset):
     # Tranformar boolean a Integer (Falso = 0, Verdadero = 1)
     le = LabelEncoder()
     revenue = le.fit_transform(dataset['Revenue'])
